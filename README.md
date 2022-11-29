@@ -1,2 +1,1 @@
-Автотест на проверку формы https://demoqa.com/automation-practice-form
-Добавлен PageObject и Faker
+Тест на проверку формы. С использованием PageObject и Faker.
