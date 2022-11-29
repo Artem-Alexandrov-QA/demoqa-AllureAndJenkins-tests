@@ -2,12 +2,10 @@ package tests;
 
 import com.github.javafaker.Faker;
 import org.junit.jupiter.api.Test;
-import pages.components.RegistrationPage;
+import page.RegistrationPage;
 import utils.RandomUtils;
 
 import java.io.File;
-
-import static com.codeborne.selenide.Selenide.sleep;
 
 
 public class PracticeFormWithFakerTests extends TestBase {

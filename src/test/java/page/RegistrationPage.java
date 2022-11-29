@@ -1,4 +1,4 @@
-package pages.components;
+package page;
 
 import com.codeborne.selenide.SelenideElement;
 
@@ -10,6 +10,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 
 public class RegistrationPage {
+
     private final static String FORM_TITLE = "Student Registration Form";
     private final static String RESULTS_TITLE = "Thanks for submitting the form";
     private SelenideElement
