@@ -1,4 +1,4 @@
-package com.alexandrov.tests.page;
+package com.alexandrov.page;
 
 import static com.codeborne.selenide.Selenide.$;
 import static java.lang.String.format;

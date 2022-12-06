@@ -1,4 +1,4 @@
-package com.alexandrov.tests.page;
+package com.alexandrov.page;
 
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;

@@ -1,4 +1,4 @@
-package utils;
+package com.alexandrov.utils;
 
 import java.util.Random;
 
