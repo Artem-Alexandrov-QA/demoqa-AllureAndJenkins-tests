@@ -1,8 +1,8 @@
-package tests;
+package com.alexandrov.tests;
 
 import com.github.javafaker.Faker;
 import org.junit.jupiter.api.Test;
-import page.RegistrationPage;
+import com.alexandrov.tests.page.RegistrationPage;
 import utils.RandomUtils;
 
 import java.io.File;

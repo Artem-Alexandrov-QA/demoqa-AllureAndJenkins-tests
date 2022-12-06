@@ -1,4 +1,4 @@
-package page;
+package com.alexandrov.tests.page;
 
 import com.codeborne.selenide.SelenideElement;
 
@@ -13,6 +13,8 @@ public class RegistrationPage {
 
     private final static String FORM_TITLE = "Student Registration Form";
     private final static String RESULTS_TITLE = "Thanks for submitting the form";
+    public CalendarComponent calendar = new CalendarComponent();
+    public StateAndCity location = new StateAndCity();
     private SelenideElement
             formTitle = $(".practice-form-wrapper"),
             firstNameInput = $("#firstName"),
@@ -23,8 +25,7 @@ public class RegistrationPage {
             pictureImg = $("#uploadPicture"),
             currentAddressInput = $("#currentAddress"),
             submitButton = $("#submit");
-    public CalendarComponent calendar = new CalendarComponent();
-    public StateAndCity location = new StateAndCity();
+
 
 
     public RegistrationPage openPage() {
