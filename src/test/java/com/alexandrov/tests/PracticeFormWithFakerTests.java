@@ -4,7 +4,6 @@ import com.github.javafaker.Faker;
 import org.junit.jupiter.api.Test;
 import com.alexandrov.page.RegistrationPage;
 import com.alexandrov.utils.RandomUtils;
-
 import java.io.File;
 
 

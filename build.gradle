@@ -7,14 +7,15 @@ repositories {
     mavenCentral()
 }
 
-def allureVersion = "2.14.0",
-    selenideVersion = "5.24.0",
+def allureVersion = "2.15.0",
+    selenideVersion = "5.24.2",
     junitVersion = "5.8.1"
 
 allure {
     version = allureVersion
     autoconfigure = true
     aspectjweaver = true
+    aspectjVersion = "1.9.6"
     configuration = "testImplementation"
     useJUnit5 {
         version = allureVersion
@@ -27,13 +28,17 @@ dependencies {
             "com.codeborne:selenide:$selenideVersion",
             "io.qameta.allure:allure-selenide:$allureVersion",
             "com.github.javafaker:javafaker:1.0.2",
-            "org.junit.jupiter:junit-jupiter-api:$junitVersion")
+            "org.junit.jupiter:junit-jupiter:$junitVersion")
     testRuntimeOnly(
             "org.slf4j:slf4j-simple:1.7.29",
             "org.junit.jupiter:junit-jupiter-engine:$junitVersion")
 }
 
-tasks.withType(JavaCompile) {
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
+
+compileJava {
     options.encoding = 'UTF-8'
 }
 
