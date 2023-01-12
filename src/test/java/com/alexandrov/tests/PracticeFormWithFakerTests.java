@@ -1,6 +1,8 @@
 package com.alexandrov.tests;
 
 import com.github.javafaker.Faker;
+import io.qameta.allure.*;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import com.alexandrov.page.RegistrationPage;
 import com.alexandrov.utils.RandomUtils;
@@ -29,6 +31,12 @@ public class PracticeFormWithFakerTests extends TestBase {
             , city = "Delhi"
             , subjects = "History";
 
+    @Feature("Forms")
+    @Story("Заполнение формы")
+    @Owner("Артём Александров")
+    @Severity(SeverityLevel.NORMAL)
+    @Link(name = "demoqa", url = "https://demoqa.com/automation-practice-form")
+    @DisplayName("Заполнение Student Registration Form")
     @Test
     void testForm() {
         registrationPage.openPage();
