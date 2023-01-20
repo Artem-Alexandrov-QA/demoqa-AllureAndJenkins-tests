@@ -84,9 +84,3 @@ task ui_tests(type: Test) {
         includeTags "ui_tests"
     }
 }
-
-task api_tests(type: Test) {
-    useJUnitPlatform {
-        includeTags "api-tests"
-    }
-}
