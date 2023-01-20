@@ -10,11 +10,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import static java.lang.String.format;
-
 public class TestBase {
 
-    public static CredentialsConfig credentials = ConfigFactory.create(CredentialsConfig.class);
+    public static CredentialsConfig config = ConfigFactory.create(CredentialsConfig.class);
 
     @BeforeAll
     static void beforeAll() {
@@ -23,7 +21,7 @@ public class TestBase {
 
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1920x1080";
-        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+        Configuration.remote = config.server();
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC",true);
