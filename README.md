@@ -20,3 +20,7 @@
 - [X] - Параметры для Jenkins
 - [X] - Credentials файлы
 - [X] - Owner test
+
+### Ветка "allure-notifications":
+- [X] - Параметры для Jenkins
+- [X] - Отправка Allure отчётов в телеграм чат
