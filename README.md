@@ -15,7 +15,7 @@
 </tr>
 </tbody>
 </table>
-- Реализованы разные подходы: PageObject, Random, Random Faker
+
 ### Реализованы проверки:
 
 - [X] - Открытие страницы https://demoqa.com/automation-practice-form;
