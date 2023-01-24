@@ -33,18 +33,3 @@
 - [X] - Параметры для Jenkins
 - [X] - Отправка Allure отчётов в телеграм чат
 
-## Команды для запуска из терминала
-Локально должны быть заданы параметры в credentials.properties
-### Запуск всех тестов на удалённом сервере:
-```bash
-gradle clean test -DremoteUrl=server
-```
-### Запуск тестов для проверки заполнения Student Registration Form:
-```bash
-gradle clean ui_test
-```
-### Собрать Allure отчет:
-```bash
-allure serve build/allure-results
-```
-## Параметры с помощью которых можно [запустить сборку в Jenkins](https://jenkins.autotests.cloud/job/09-artemalexandrov09-jenkins-notifications/build?delay=0sec):
