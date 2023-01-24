@@ -48,3 +48,4 @@ gradle clean ui_test
 allure serve build/allure-results
 ```
 ### Параметры с помощью которых можно [запустить сборку в Jenkins](https://jenkins.autotests.cloud/job/09-artemalexandrov09-jenkins-notifications/build?delay=0sec):
+![image](https://user-images.githubusercontent.com/118105693/214293989-878b722b-0b54-471f-81ff-affff08e062c.png)
